@@ -17,7 +17,7 @@ def makeStairs(n):
 		while (s <= c): 
 			a[x][s] = '#'
 			s+=1
-		x+= 1
+		x+=1 
 
 	
 		
