@@ -4,17 +4,24 @@ import sys
 
 
 # n = int(input().strip())
-n = 4
+n = 6
 
 def makeStairs(n): 
 	a = [[' ']*n]*n
-	v = n - 1 
-	while (v > 0): 
-		i = 0 
-		a[i][v] = '#'
-		i+=1
-		v-=1
+	x = 0
+	while (x < n): 
+		v = x + 1
+		s = n - v 
+		c = n - 1 
 
+		while (s <= c): 
+			a[x][s] = '#'
+			s+=1
+		x+= 1
+
+	
+		
+	print (a)
 	return (a)
 
 for x in makeStairs(n): 
